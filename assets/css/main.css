@@ -1217,6 +1217,11 @@ html.dark {
   --dropdown-arrow-color: brightness(0) saturate(100%) invert(24%) sepia(23%) saturate(493%) hue-rotate(186deg) brightness(100%) contrast(91%);
   --top-menu-border-color: #171c28;
 }
+@media (max-width: 991.98px) {
+  html.dark {
+    --header-shadow-color: box-shadow: rgba(0, 0, 0, 0.20);
+  }
+}
 
 html {
   --text-color: #1a162e;
@@ -1245,6 +1250,12 @@ html {
 .header {
   background: var(--header-bg-color);
 }
+@media (max-width: 991.98px) {
+  .header {
+    --header-bg-color: #fff;
+    --header-shadow-color: box-shadow: 0px 20px 60px 10px rgba(237, 237, 246, 0.20);
+  }
+}
 
 .top-bar {
   padding: 30px 0;
@@ -1255,7 +1266,7 @@ html {
     padding: 20px 0;
   }
 }
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .top-bar {
     padding: 16px 0;
     justify-content: space-between;
@@ -1310,9 +1321,9 @@ html {
   align-items: center;
   gap: 20px;
 }
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .top-act {
-    margin-left: inherit;
+    margin-left: 0;
   }
 }
 .top-act__group {
@@ -1381,7 +1392,7 @@ html {
     margin-left: 40px;
   }
 }
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   .logo__img {
     margin-left: 0;
   }
