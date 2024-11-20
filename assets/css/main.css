@@ -1282,23 +1282,17 @@ html {
 }
 
 .navbar {
-  margin-left: 144px;
+  margin-left: 129px;
 }
 @media (max-width: 1199.98px) {
   .navbar {
-    margin-left: 50px;
+    margin-left: 28px;
   }
 }
 @media (max-width: 991.98px) {
   .navbar {
     display: none;
   }
-}
-.navbar__item:first-child a {
-  padding-left: 0;
-}
-.navbar__item:last-child a {
-  padding-right: 0;
 }
 .navbar__item:hover .dropdown {
   display: block;
@@ -1403,7 +1397,6 @@ html {
   left: 0;
   width: min(1240px, 100%);
   padding-top: 54px;
-  display: none;
 }
 .dropdown__inner {
   position: relative;
@@ -1418,7 +1411,7 @@ html {
   position: absolute;
   top: -12px;
   left: var(--arrow-left-pos);
-  translate: -60%;
+  translate: -50%;
   filter: var(--dropdown-arrow-color);
 }
 

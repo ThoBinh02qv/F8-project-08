@@ -4,7 +4,7 @@
 
   width: min(1240px, 100%);
   padding-top: 54px;
-  display: none;
+  // display: none;
 
   &__inner {
     position: relative;
@@ -19,7 +19,7 @@
       position: absolute;
       top: -12px;
       left: var(--arrow-left-pos);
-      translate: -60%;
+      translate: -50%;
       filter: var(--dropdown-arrow-color);
     }
   }
