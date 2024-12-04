@@ -1416,11 +1416,13 @@ html {
 }
 
 .top-menu {
+  --main-column-width: 292px;
+  position: relative;
   height: 100%;
   display: flex;
 }
 .top-menu__main {
-  width: 292px;
+  width: var(--main-column-width);
   height: 100%;
   border-right: 1px solid var(--top-menu-border-color);
   overflow-y: auto;
@@ -1458,6 +1460,11 @@ html {
   white-space: nowrap;
   overflow-y: auto;
   scroll-behavior: smooth;
+}
+
+.sub-menu {
+  position: absolute;
+  inset: 0 0 0 var(--main-column-width);
 }
 
 /*# sourceMappingURL=main.css.map */
