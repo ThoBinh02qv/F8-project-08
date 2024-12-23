@@ -31,6 +31,7 @@
   position: relative;
   height: 100%;
   display: flex;
+  overflow: hidden;
 
   &__main {
     width: var(--main-column-width);
@@ -49,7 +50,7 @@
 .menu-column {
   display: flex;
   gap: 14px;
-
+margin-top: 36px;
   &__content-title {
     font-size: 1.6rem;
     font-weight: 500;
@@ -57,6 +58,9 @@
     margin-bottom: 19px;
   }
 
+  &__block > li:first-child .sub-menu  {
+    display: block;
+  }
 
   &__content-link {
     font-size: 1.4rem;
@@ -64,7 +68,7 @@
     line-height: 1.42857;
     padding: 7px 0;
     display: block;
-
+    
     &:hover {
       color: #0071dc;
       font-weight: 500;
@@ -72,14 +76,10 @@
 
   }
 
-  &__content-block &__content-link:last-child {
-    padding-bottom: 0;
-  }
-
   &__content-body {
     display: flex;
     margin-left: 30px;
-    gap: 77px;
+     gap: 49px;
     white-space: nowrap;
 
     overflow-y: auto;
@@ -95,4 +95,10 @@
 .sub-menu {
  position: absolute;
  inset: 0 0 0 var(--main-column-width);
+ margin-top: -36px;
+ overflow-y: auto;
+ scroll-padding-top: 36px;
+ scroll-behavior: smooth;
+ display: none;
 }
+
